@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/fitness"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <ImageView
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btn_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:icon="@drawable/ic_baseline_supervisor_account_24"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="40dp"
+        android:text="Create Account"
+        app:iconTint="@android:color/white"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/create_account_btn"
+      />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_create_account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:icon="@drawable/ic_baseline_supervisor_account_24"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Login"
+        app:iconTint="@android:color/white"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:background="@drawable/login_btn"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
